@@ -1,4 +1,6 @@
-import * as PromptSync from "prompt-sync";
+#! /usr/bin/env node
+
+import  * as PromptSync from "prompt-sync";
 const message = PromptSync();
 let guesses = [];
 
@@ -13,7 +15,7 @@ while (rounds > 0) {
 
   if (actualNum == Number(guessNum)) {
     console.log(
-      ` Congratualtions ${actualNum} is the correct guess. Game ending`
+      ` Congratualtions ${actualNum} is the correct guess. Game ending!!!`
     );
     break;
   } else {

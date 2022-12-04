@@ -1,3 +1,4 @@
+#! /usr/bin/env node
 "use strict";
 exports.__esModule = true;
 var PromptSync = require("prompt-sync");
@@ -9,7 +10,7 @@ while (rounds > 0) {
     var actualNum = Math.floor(Math.random() * 20) + 1;
     var guessNum = message("Guess the number: ");
     if (actualNum == Number(guessNum)) {
-        console.log(" Congratualtions ".concat(actualNum, " is the correct guess. Game ending"));
+        console.log(" Congratualtions ".concat(actualNum, " is the correct guess. Game ending!!!"));
         break;
     }
     else {

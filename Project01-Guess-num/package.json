@@ -1,6 +1,6 @@
 {
-  "name": "usman_nawaz-guess-the-number",
-  "version": "1.8.0",
+  "name": "guessing-the-number-game",
+  "version": "1.7.0",
   "description": "",
   "main": "index.js",
   "bin": {
