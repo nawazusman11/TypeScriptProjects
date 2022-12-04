@@ -1,17 +1,17 @@
-const ps = require("prompt-sync");
-const message = ps();
+import * as PromptSync from "prompt-sync";
+const message = PromptSync();
 let guesses = [];
 
 console.log("Guess the number from 1-20");
 var rounds = 3;
 
 while (rounds > 0) {
-  //console.log(guessNum);
+ 
   let actualNum = Math.floor(Math.random() * 20) + 1;
 
   let guessNum = message("Guess the number: ");
 
-  if (actualNum == guessNum) {
+  if (actualNum == Number(guessNum)) {
     console.log(
       ` Congratualtions ${actualNum} is the correct guess. Game ending`
     );
@@ -30,7 +30,7 @@ while (rounds > 0) {
 
     let addGuesses = message("Do you want to add more guesses?  y/n ");
     if (addGuesses == "y" || addGuesses == "Y" || addGuesses == "Yes") {
-      rounds = message("Enter number of guesses: ");
+      rounds = Number(message("Enter number of guesses: "));
       console.log(`Remaining guess tries updated to : ${rounds}`);
     }
   }
